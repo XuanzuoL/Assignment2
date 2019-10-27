@@ -20,7 +20,7 @@ export class ApiPlacesService {
 
   public getPlaces(value:string){
     console.log("logging"+value);
-    return this.httpClient.get<Config>('http://localhost:3000/places/'+value);
+    return this.httpClient.get<Config>('places/'+value);
   }
   
 }
